@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#pessoa {
+  animation: pessoa 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  animation-delay: .5s;
+}
+
+#cabelo {
+  animation: cabelo 1s ease-in-out infinite alternate;
+}
+
+#bola-8 {
+  animation: bolinhas 1s ease-in-out 0s infinite alternate;
+}
+
+#bola-7 {
+  animation: bolinhas 1s ease-in-out .2s infinite alternate;
+}
+
+#bola-6 {
+  animation: bolinhas 1s ease-in-out .4s infinite alternate;
+}
+
+#bola-5 {
+  animation: bolinhas 1s ease-in-out .6s infinite alternate;
+}
+
+#bola-4 {
+  animation: bolinhas 1s ease-in-out .8s infinite alternate;
+}
+
+#bola-3 {
+  animation: bolinhas 1s ease-in-out 1s infinite alternate;
+}
+
+#bola-2 {
+  animation: bolinhas 1s ease-in-out 1.2s infinite alternate;
+}
+
+#bola-1 {
+  animation: bolinhas 1s ease-in-out 1.4s infinite alternate;
+}
+
+#planeta {
+  animation: planeta 5s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#coracao {
+  animation: coracao 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes planeta {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes coracao {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes bolinhas {
+  from {
+    transform: rotateZ(0);
+  }
+
+  to {
+    transform: rotateZ(2deg);
+  }
+}
+
+@keyframes pessoa {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(7deg);
+  }
+}
+
+@keyframes cabelo {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(0.5deg);
+  }
+}
