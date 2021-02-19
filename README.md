@@ -7,3 +7,8 @@ Simple SVG Animation with CSS
 https://alvescleiton.github.io/svg-animation
 
 ---
+
+### Tools
+* HTML
+* CSS
+* SVG
